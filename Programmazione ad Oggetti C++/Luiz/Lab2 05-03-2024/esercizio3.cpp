@@ -53,6 +53,7 @@ class CreditCard
     CreditCard(string new_owner, string new_card_number)
     {
       owner = new_owner;
+
       card_number = new_card_number;  
     }
     void print()
@@ -63,18 +64,30 @@ class CreditCard
     {
       return Total_paid;
     }
-    void charge(int euro, int cents)
+    void charge(int euros, int cents)
     {
-      int new_euro;
+      int new_euros;
       int new_cents = cents + Total_paid.get_cents();
       if new_cents >= 100:
       {
-        new_euro = 1;
+        new_euros += 1;
         new_cents -= 100;
       }
       Total_paid.set_cents(new_cents) 
+      Total_paid.set_euros(new_euros)
 
 
     }
   }
 };
+
+int main()
+/*Il programma principale crea un oggetto di tipo CreditCard, legge da un file di testo un elenco di spese e
+aggiorna il totale dei pagamenti. Il file di testo delle spese contiene per ogni riga le informazioni di una
+singola spesa su tre colonne: <causale della spesa> <euro> <centesimi>
+es:
+book 90 60
+pizza 20 50*/
+{
+
+}
