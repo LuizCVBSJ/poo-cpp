@@ -3,10 +3,11 @@
 namespace std;
 
 class Money
-/*  Un operatore ‘+’ definito come funzione non-membro: Money operator+(Money m1, Money m2)
+/*
+  Un operatore ‘+’ definito come funzione non-membro: Money operator+(Money m1, Money m2)
 che esegue la somma di due oggetti Money sommando euro e centesimi (i centesimi se
 eccedono il valore di 100 vanno convertiti in euro: es 10.50 euro+ 5.70 euro= 16.20 euro)
- Un operatore ‘<<’ definito come funzione non-membro: ostream& operator<<(ostream& os,
+  Un operatore ‘<<’ definito come funzione non-membro: ostream& operator<<(ostream& os,
 Money m) per stampare a video i dati membri euros e cents
 */
 {
@@ -82,12 +83,14 @@ class CreditCard
 };
 
 int main()
-/*Il programma principale crea un oggetto di tipo CreditCard, legge da un file di testo un elenco di spese e
+/*
+  Il programma principale crea un oggetto di tipo CreditCard, legge da un file di testo un elenco di spese e
 aggiorna il totale dei pagamenti. Il file di testo delle spese contiene per ogni riga le informazioni di una
 singola spesa su tre colonne: <causale della spesa> <euro> <centesimi>
 es:
 book 90 60
-pizza 20 50*/
+pizza 20 50
+*/
 {
 
 }
