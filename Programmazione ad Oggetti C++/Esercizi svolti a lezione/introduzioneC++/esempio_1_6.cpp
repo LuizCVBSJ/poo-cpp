@@ -1,5 +1,5 @@
 #include <iostream> 
-int f(int); 
+int f(int); //prototype 
 int main()
 { int dato=2; 
   std::cout<<f(dato)<<std::endl; // stampa 9    
