@@ -7,8 +7,8 @@ int main(){
 } 
 
 void f(const int* array, const int dim){ 
-   for(int i=0;i<dim;i++){ 
+  for(int i=0;i<dim;i++){ 
         std::cout<< array[i]; 
- }
-   // dim=5; !!ERRORE DI COMPILAZIONE dim è una variabile const
+  }
+  // dim=5; !!ERRORE DI COMPILAZIONE dim è una variabile const
 }
