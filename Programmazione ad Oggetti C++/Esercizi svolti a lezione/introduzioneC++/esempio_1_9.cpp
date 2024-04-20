@@ -2,9 +2,9 @@
 #include<iostream>
 int RicercaLineare(int V[N], int D) { 
   int trovato=0; 
-   for (int i=0; i<N; i++) 
-        if (V[i]==D) trovato=1; 
-   return trovato; } 
+  for (int i=0; i<N; i++) 
+       if (V[i]==D) trovato=1; 
+  return trovato; } 
 
 /*
 void modifica(int V[N]) {
