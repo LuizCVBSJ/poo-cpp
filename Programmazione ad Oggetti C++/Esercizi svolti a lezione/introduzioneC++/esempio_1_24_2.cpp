@@ -31,7 +31,7 @@ int main() {
 	cout << endl << "Leggo i 3 elementi della sequenza:"<< endl;
 	for (i = 0; i<3; i++)
 	{
-		cout << "Inserire il valore della sequenza del telepata "<< i << "/3: ";
+		cout << "\nInserire il valore della sequenza del telepata "<< i+1 << "/3: ";
 		cin >> telepata[i];
 	}
 	for (i = 0; i<N-2; i++)
@@ -49,8 +49,8 @@ int main() {
 	delete[] sequenza;
 
 	if (trovato == 1)
-		cout << "Incredibile!!! Il telepata ha indovinato!!!";
+		cout << "\nIncredibile!!! Il telepata ha indovinato!!!\n";
 	else
-		cout << "E' solo un buffone!!! Non ha indovinato!!!";
+		cout << "\nE' solo un buffone!!! Non ha indovinato!!!\n";
 	return 0;
 }
