@@ -1,10 +1,10 @@
 #include <iostream>
 
-typedef struct{
+struct Time{
 int hour;
 int minute;
 int second;
-} Time;
+} ;
 
 
 void print24H( const Time & ); // prototype
