@@ -9,6 +9,7 @@ void exch(Item &A, Item &B)
 
 // array based priority queue
 template <class Item>
+//arrayPriorityQueue
 class aPQ 
   {
     private:
